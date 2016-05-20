@@ -1,0 +1,27 @@
+cd ~ 						# change directories to your home directory
+mkdir version-control		# makes the version-control directory
+dir 						# shows listing within directory
+lesson_1_reflectoins.txt	# opens this text file
+
+fc (file1) (file2)			# file compare between the two files   (command prompt)
+diff (file1) (file2)		# file compare between the two files   (bash terminal)
+
+###################
+
+Commits are small
+As diff between two versions gets larger it becomes harder to understand
+
+Rule of thumb:
+
+
+commit --stats include insertions and deletions
+make 1 commit per logical change
+
+
+commit --stats include insertions and deletions
+
+
+######################
+
+git log 							# view logs of commits
+git diff (commit #1) (commit #2)	# see how many changes between previews
