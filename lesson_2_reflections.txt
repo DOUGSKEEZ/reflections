@@ -5,3 +5,45 @@ git status
 staging area
 working directory
 
+###########
+What happens when you initialize a repository? Why do you need to do it?
+-create .git to track changes and make commits
+
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+-staging area offers workspace to stage changes before committing them.  Intermediary between working dir and latest commit when you make changes.
+
+How can you use the staging area to make sure you have one commit per logical
+change?
+git diff -staged
+-review and add one logical change to the staging area from workign directory
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+-branches woul be helpful as you or a team work on seperate logical changes
+
+How do the diagrams help you visualize the branch structure?
+-diagrams help visualize what things interact with what.
+
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+- changes come together to review net changes made
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+- automatic merging removes human error, however may include unintended results
+- Always doing merges manually allow for more direct knowledge and control over purposeful changes by the owner
+
+##########
+
+git diff (with no arguements) shows difference between Working Directory and Staging area
+git diff --staged   shows difference between staging area and previous commit
+
+git reset --hard    resets changes in working directory back to latest commit  (Not Reversable! Careful!)
+
+
+How can you use the staging area to make sure you have one commit per logical change?
+- Can review changes and add only logical changes using git add to staging area to be committed 
+You may also want to commit your changes to the file. When you're ready to move on, click "Next" and Sarah will go over a concept called branching.
+
+############
